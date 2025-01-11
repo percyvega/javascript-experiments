@@ -1,4 +1,5 @@
 console.log(42 + 2); // 44
+
 let myName = 'Percy';
 console.log(myName  + 10); // Percy10
 
@@ -9,7 +10,7 @@ console.log(myString); // "23"
 console.log(Number(myString)); // 23
 
 const myFloat = 23.0
-console.log(myString === myFloat); // false
+console.log(myString === myFloat); // false (info: Condition is always false since types 'string' and 'number' have no overlap)
 console.log(Number(myString) === myFloat); // true
 
 console.log(Number("Percy")) // NaN

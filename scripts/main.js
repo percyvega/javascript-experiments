@@ -1,17 +1,9 @@
-let alertResponse = alert("Hello World!");
-console.log(alertResponse); // undefined (the alert method is void)
+let alertResponse = alert("Hello World!"); // Opens up a modal with "Hello World!" (warning: Void function return value is used)
+console.log(alertResponse); // undefined (this is because the alert method is void)
 
-let confirmResponse = confirm("Ok === True\nCancel === False");
+let confirmResponse = confirm("Ok === True\nCancel === False"); // Opens up a modal
 console.log(confirmResponse);
 
-let promptResponse = prompt("What is your name?");
+let promptResponse = prompt("What is your name?"); // Opens up a modal
 console.log("typeof: " + typeof promptResponse);
 console.log("Value: " + promptResponse);
-
-// Optional Chaining
-// This feature was introduced in ES2020. It can handle code that calls on an object property that doesn't exist.
-if (promptResponse?.length) {
-    // Nullish Coalescing operator
-    // returns its right-hand side operand when its left-hand side operand is null or undefined, otherwise it returns the left-hand side.
-    console.log("Value: " + promptResponse ?? "You didn't ever a value!");
-}
